@@ -1,5 +1,11 @@
-var sqlite3       = require('sqlite3').verbose();
-var db            = new sqlite3.Database('./data/workshop.db');
+var sqlite3 = require('sqlite3').verbose();
+var dbPath  = './data';
+var glob    = require('glob');
+
+if(glob.sync('./server').length) {
+    dbPath = './server/data';
+}
+var db = new sqlite3.Database(dbPath + '/workshop.db');
 
 function create(contact, success, handleErr) {
     if(!contact.firstName || !contact.lastName) {
