@@ -1,0 +1,30 @@
+[
+    {
+        "firstName": "Paul",
+        "lastName": "Negoescu",
+        "email": "paul.negoescu@iquestgroup.com",
+        "website": "http://www.iquestgroup.com/",
+        "isFavorite": true
+    },
+    {
+        "firstName": "John",
+        "lastName": "doe",
+        "email": "john.doe@gmail.com",
+        "website": null,
+        "isFavorite": false
+    },
+    {
+        "firstName": "Constantin",
+        "lastName": "Iordan",
+        "email": "constantin.iordan@iquestgroup.com",
+        "website": "http://www.dirtbike.com/",
+        "isFavorite": true
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "email": "janedoe@yahoo.com",
+        "website": null,
+        "isFavorite": false
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "name": "angular-training",
+    "version": "1.0.0",
+    "description": "The iQuest web development Angular 1.* training application.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "node server/data/initializer.js"
+    },
+    "author": "Paul Negoescu",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.14.1",
+        "express": "^4.13.3",
+        "glob": "^5.0.15",
+        "sqlite3": "^3.1.0"
+    }
+}
