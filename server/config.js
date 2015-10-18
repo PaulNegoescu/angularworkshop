@@ -1,6 +1,6 @@
 var config =  {
     port: 9000,
-    root: '.'
+    root: __dirname
 };
 
 module.exports = config;

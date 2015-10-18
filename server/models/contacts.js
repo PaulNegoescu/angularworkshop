@@ -1,10 +1,7 @@
+var config  = require('../config')
 var sqlite3 = require('sqlite3').verbose();
-var dbPath  = './data';
-var glob    = require('glob');
+var dbPath  = config.root + '/data';
 
-if(glob.sync('./server').length) {
-    dbPath = './server/data';
-}
 var db = new sqlite3.Database(dbPath + '/workshop.db');
 
 function create(contact, success, handleErr) {
