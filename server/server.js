@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.use(express.static(config.root + '/../app'));
+app.use(express.static(config.root + '/../public'));
 
 var controllers = glob.sync(config.root + '/controllers/*.js');
 controllers.forEach(function (controller) {
